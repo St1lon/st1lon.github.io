@@ -86,7 +86,19 @@
             color: #415167;
             font-weight: 700;
         }
-        .step h4 { 
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .step {
+            text-align: center;
+            max-width: 220px;
+        }
+        .step img { height: 90px; margin-bottom: 25px; }
+        .step h3 { 
             font-size: 18px; 
             margin-bottom: 15px;
             color: #415167;
@@ -97,15 +109,13 @@
             color: #7F8C8D; 
             line-height: 1.7;
         }
-        .steps {
-            display: flex;
-            justify-content: center;
+        
         /* Products */
         .products {
             padding: 100px 40px;
             background: #F9F5E8;
             text-align: center;
-        .products h2 {
+        }
         .products h2 { 
             font-size: 36px; 
             margin-bottom: 80px;
@@ -137,17 +147,17 @@
             margin-bottom: 12px;
             font-weight: 600;
         }
-        .product-card h4 { 
-            font-size: 18px; 
-            margin-bottom: 10px;
-            color: #415167;
-            font-weight: 600;
-        }
         .product-card h3 { 
             font-size: 18px; 
             margin-bottom: 10px;
             color: #415167;
             font-weight: 600;
+        }
+        .product-card p { 
+            font-size: 13px; 
+            color: #7F8C8D; 
+            margin-bottom: 25px;
+            line-height: 1.6;
         }
         .btn {
             display: inline-block;
@@ -179,6 +189,7 @@
             background: #415167;
             color: white;
         }
+        
         /* Gift */
         .gift {
             display: flex;
@@ -208,44 +219,38 @@
             margin-bottom: 20px;
             font-weight: 600;
         }
-        .gift-content h4 {
-            font-size: 20px;
-            color: #415167;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
         .gift-content h3 {
             font-size: 20px;
             color: #415167;
             margin-bottom: 15px;
             font-weight: 600;
         }
-        .feature div p {
-            margin: 0;
-            font-size: 13px;
-        }
-        .combo h3 { 
-        .combo-card h4 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #415167;
-            font-weight: 600;
-        }
-        .combo-card p {
-            font-size: 13px;
+        .gift-content p { 
+            margin-bottom: 35px; 
+            line-height: 1.8; 
             color: #7F8C8D;
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 50px;
-            background: #151D28;
-            color: white;
             font-size: 14px;
         }
+        .gift-features {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 35px;
+        }
+        .feature { display: flex; align-items: center; gap: 15px; }
+        .feature img { height: 28px; }
+        .feature div p {
+            font-size: 13px;
+            color: #7F8C8D;
+            line-height: 1.6;
+            margin: 0;
+        }
         
+        /* Combo */
+        .combo {
+            padding: 100px 40px;
+            background: #F9F5E8;
+            text-align: center;
+        }
         .combo h2 { 
             font-size: 36px; 
             margin-bottom: 80px;
@@ -271,7 +276,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
         .combo-card img { width: 100%; max-width: 220px; margin-bottom: 25px; }
-        .combo-card h4 {
+        .combo-card h3 {
             font-size: 18px;
             margin-bottom: 10px;
             color: #415167;
@@ -283,6 +288,9 @@
             margin-bottom: 25px;
             line-height: 1.6;
         }
+        .combo-card s {
+            color: #999;
+        }
         
         footer {
             text-align: center;
@@ -290,92 +298,6 @@
             background: #151D28;
             color: white;
             font-size: 14px;
-        }   gap: 50px;
-            margin-bottom: 35px;
-        }
-        .feature { display: flex; align-items: center; gap: 15px; }
-        .feature img { height: 28px; }
-        .feature div p {
-            font-size: 13px;
-            color: #7F8C8D;
-            line-height: 1.6;
-            margin: 0;
-        }
-            line-height: 1.6;
-        }
-        }
-        .product-card img { width: 100%; max-width: 150px; margin-bottom: 20px; }
-        .price { font-size: 20px; color: #c8956d; margin-bottom: 10px; }
-        .product-card h4 { font-size: 18px; margin-bottom: 10px; }
-        .product-card p { font-size: 14px; color: #666; margin-bottom: 20px; }
-        .btn {
-            display: inline-block;
-            background: #c8956d;
-            color: white;
-            padding: 10px 30px;
-            border-radius: 20px;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        .btn-outline {
-            display: inline-block;
-            border: 1px solid #333;
-            color: #333;
-            padding: 10px 30px;
-            border-radius: 20px;
-            text-decoration: none;
-        }
-        
-        /* Gift */
-        .gift {
-            display: flex;
-            padding: 80px;
-            background: white;
-            align-items: center;
-            gap: 60px;
-        }
-        .gift-image { flex: 1; }
-        .gift-image img { width: 100%; }
-        .gift-content { flex: 1; }
-        .gift-content h3 { font-size: 14px; color: #999; margin-bottom: 10px; }
-        .gift-content h2 { font-size: 32px; margin-bottom: 20px; }
-        .gift-content .price { font-size: 24px; color: #c8956d; margin-bottom: 20px; }
-        .gift-content p { margin-bottom: 30px; line-height: 1.8; color: #666; }
-        .gift-features {
-            display: flex;
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-        .feature { display: flex; align-items: center; gap: 10px; }
-        .feature img { height: 24px; }
-        
-        /* Combo */
-        .combo {
-            padding: 80px 20px;
-            background: #f5f5f5;
-            text-align: center;
-        }
-        .combo h3 { font-size: 14px; color: #999; margin-bottom: 10px; }
-        .combo h2 { font-size: 32px; margin-bottom: 60px; }
-        .combo-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .combo-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-        .combo-card img { width: 100%; max-width: 200px; margin-bottom: 20px; }
-        
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #333;
-            color: white;
         }
     </style>
 </head>
@@ -399,138 +321,138 @@
         </div>
     </header>
 
-    <!-- Build Base -->
     <main>
         <!-- Build Base -->
-        <section class="build-base">ffee</h3>
-        <h2>COFFEE BUILD YOUR BASE</h2>
-        <div class="steps">
-            <div class="step">
-                <img src="assets/icons/IC (1).png" alt="">
-                <h4>Chọn loại hạt</h4>
-                <p>Ý bạn có thể chọn Arabica, Robusta hay các loại cụ thể như đậu màu lúa mì.</p>
-            </div>
-            <div class="step">
-                <img src="assets/icons/IC (2).png" alt="">
-                <h4>Chọn lượng</h4>
-                <p>Tăng hoặc giảm số lượng cà phê mà bạn muốn sử dụng để tinh chỉnh nồng độ cà phê.</p>
-            </div>
-            <div class="step">
-    <!-- Products -->
-    <section class="products" id="coffee">
-        <h2>Choose Your Favorite</h2>
-        <p class="section-subtitle">CHUẨN GU ĐÚNG VỊ</p>
-        <div class="product-grid">
-            <article class="product-card">
-                <img src="assets/images/image (1).png" alt="REVO Morning">
-                <p class="price">99.000</p>
-                <h3>REVO Morning</h3>
-                <p>Cà phê Việt Hảo hạng</p>
-                <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-            <article class="product-card">
-                <img src="assets/images/IMAGE (2).png" alt="REVO Everyday">
-                <p class="price">85.000</p>
-                <h3>REVO Everyday</h3>
-                <p>Cà phê hào hạng chất lượng</p>
-                <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-            <article class="product-card">
-                <img src="assets/images/IMAGE (3).png" alt="REVO Origin">
-                <p class="price">119.000</p>
-                <h3>REVO Origin</h3>
-                <p>Hảo hạng 8 dùng vi quy cầu</p>
-                <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-            <article class="product-card">
-                <img src="assets/images/image (6).png" alt="REVO Đậm Đà">
-                <p class="price">75.000</p>
-                <h3>REVO Đậm Đà</h3>
-                <p>Sâm đậm đặc thật độc đáo</p>
-                <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-        </div>
-    </section>  <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </div>
-    <!-- Gift -->
-    <section class="gift" id="gift">
-        <div class="gift-image">
-            <img src="assets/images/IMAGE.png" alt="Giftset Cà phê Việt Nam">
-        </div>
-        <div class="gift-content">
-            <p class="section-subtitle">Best Gift For Best Friend</p>
-            <h2>GIFTSET</h2>
-            <p class="price">285.000</p>
-            <h3>Giftset "Cà phê Việt Nam"</h3>
-            <p>Với bộ quà tặng có chất lượng cao này ở các loại cà phê đen khác nhau, chúng tôi sẽ giới thiệu những hương vị tuyệt vời của từng loại hạt cà phê Việt Nam...</p>
-            <div class="gift-features">
-                <div class="feature">
-                    <img src="assets/icons/ic.png" alt="Hộp phin">
-                    <div>
-                        <p>1 cái hộp</p>
-                        <p>Hạn Hữu/ng 18ml</p>
-                    </div>
+        <section class="build-base">
+            <p class="section-subtitle">Your Personalized Coffee</p>
+            <h2>COFFEE BUILD YOUR BASE</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="assets/icons/IC (1).png" alt="Chọn loại hạt">
+                    <h3>Chọn loại hạt</h3>
+                    <p>Ý bạn có thể chọn Arabica, Robusta hay các loại cụ thể như đậu màu lúa mì.</p>
                 </div>
-                <div class="feature">
-                    <img src="assets/icons/IC_coffee.png" alt="Gói cà phê">
-                    <div>
-                        <p>24 gói</p>
-                        <p>6 vị X 4 gói/vị ~ 800ml</p>
-                    </div>
+                <div class="step">
+                    <img src="assets/icons/IC (2).png" alt="Chọn lượng">
+                    <h3>Chọn lượng</h3>
+                    <p>Tăng hoặc giảm số lượng cà phê mà bạn muốn sử dụng để tinh chỉnh nồng độ cà phê.</p>
+                </div>
+                <div class="step">
+                    <img src="assets/icons/IC (3).png" alt="Các loại hạt">
+                    <h3>Các loại hạt</h3>
+                    <p>70% là cỡ hạng khác là số phần trăm bột cà phê trong hỗn hợp toàn bộ.</p>
+                </div>
+                <div class="step">
+                    <img src="assets/icons/ic.png" alt="Chọn kích cỡ">
+                    <h3>Chọn kích cỡ</h3>
+                    <p>Này nói có thể chọn kích cỡ của bạn theo sự yêu thích về số lượng cà phê.</p>
                 </div>
             </div>
-            <a href="#" class="btn">MUA NGAY</a>
-            <a href="#" class="btn-outline">CHI TIẾT</a>
-        </div>
-    </section>  <div class="feature">
-                    <img src="assets/icons/IC_coffee.png" alt="">
-                    <div>
-                        <div>24 gói</div>
-                        <div>6 vị X 4 gói/vị ~ 800ml</div>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">MUA NGAY</a>
-            <a href="#" class="btn-outline">CHI TIẾT</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Combo -->
-    <section class="combo" id="phin">
-        <p class="section-subtitle">Your Personalized Coffee</p>
-        <h2>COMBO PHIN PHÊ</h2>
-        <div class="combo-grid">
-            <article class="combo-card">
-                <img src="assets/images/image (7).png" alt="Combo Revo đậm đà">
-                <p class="price">147.000 <s>220.000</s></p>
-                <h3>Combo Revo đậm đà</h3>
-                <p>Chính hương vị nhẹ hơn đậm đắm của bạn sẽ làm tăng sự hài lòng khi vừa bạn...</p>
+        <!-- Products -->
+        <section class="products" id="coffee">
+            <p class="section-subtitle">Choose Your Favorite</p>
+            <h2>CHUẨN GU ĐÚNG VỊ</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="assets/images/image (1).png" alt="REVO Morning">
+                    <p class="price">99.000</p>
+                    <h3>REVO Morning</h3>
+                    <p>Cà phê Việt Hảo hạng</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+                <article class="product-card">
+                    <img src="assets/images/IMAGE (2).png" alt="REVO Everyday">
+                    <p class="price">85.000</p>
+                    <h3>REVO Everyday</h3>
+                    <p>Cà phê hào hạng chất lượng</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+                <article class="product-card">
+                    <img src="assets/images/IMAGE (3).png" alt="REVO Origin">
+                    <p class="price">119.000</p>
+                    <h3>REVO Origin</h3>
+                    <p>Hảo hạng 8 dùng vi quy cầu</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+                <article class="product-card">
+                    <img src="assets/images/image (6).png" alt="REVO Đậm Đà">
+                    <p class="price">75.000</p>
+                    <h3>REVO Đậm Đà</h3>
+                    <p>Sâm đậm đặc thật độc đáo</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gift -->
+        <section class="gift" id="gift">
+            <div class="gift-image">
+                <img src="assets/images/IMAGE.png" alt="Giftset Cà phê Việt Nam">
+            </div>
+            <div class="gift-content">
+                <p class="section-subtitle">Best Gift For Best Friend</p>
+                <h2>GIFTSET</h2>
+                <p class="price">285.000</p>
+                <h3>Giftset "Cà phê Việt Nam"</h3>
+                <p>Với bộ quà tặng có chất lượng cao này ở các loại cà phê đen khác nhau, chúng tôi sẽ giới thiệu những hương vị tuyệt vời của từng loại hạt cà phê Việt Nam...</p>
+                <div class="gift-features">
+                    <div class="feature">
+                        <img src="assets/icons/ic.png" alt="Hộp phin">
+                        <div>
+                            <p>1 cái hộp</p>
+                            <p>Hạn Hữu/ng 18ml</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="assets/icons/IC_coffee.png" alt="Gói cà phê">
+                        <div>
+                            <p>24 gói</p>
+                            <p>6 vị X 4 gói/vị ~ 800ml</p>
+                        </div>
+                    </div>
+                </div>
                 <a href="#" class="btn">MUA NGAY</a>
                 <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-            <article class="combo-card">
-                <img src="assets/images/image (8).png" alt="Combo Revo Everyday">
-                <p class="price">156.000 <s>220.000</s></p>
-                <h3>Combo Revo Everyday</h3>
-                <p>Một hương vị rất thật hảo hạng đặn định sẽ là sự yêu thích ngày của bạn...</p>
-                <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-            <article class="combo-card">
-                <img src="assets/images/pr-0018-r.png" alt="Combo Revo đặc biệt">
-                <p class="price">278.000 <s>340.000</s></p>
-                <h3>Combo Revo đặc biệt</h3>
-                <p>Sự kết hợp tối ưu của giá trị thật nồng độ có thể vị động phù sự trả ứng...</p>
-                <a href="#" class="btn">MUA NGAY</a>
-                <a href="#" class="btn-outline">CHI TIẾT</a>
-            </article>
-        </div>
-    </section>
+            </div>
+        </section>
+
+        <!-- Combo -->
+        <section class="combo" id="phin">
+            <p class="section-subtitle">Your Personalized Coffee</p>
+            <h2>COMBO PHIN PHÊ</h2>
+            <div class="combo-grid">
+                <article class="combo-card">
+                    <img src="assets/images/image (7).png" alt="Combo Revo đậm đà">
+                    <p class="price">147.000 <s>220.000</s></p>
+                    <h3>Combo Revo đậm đà</h3>
+                    <p>Chính hương vị nhẹ hơn đậm đắm của bạn sẽ làm tăng sự hài lòng khi vừa bạn...</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+                <article class="combo-card">
+                    <img src="assets/images/image (8).png" alt="Combo Revo Everyday">
+                    <p class="price">156.000 <s>220.000</s></p>
+                    <h3>Combo Revo Everyday</h3>
+                    <p>Một hương vị rất thật hảo hạng đặn định sẽ là sự yêu thích ngày của bạn...</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+                <article class="combo-card">
+                    <img src="assets/images/pr-0018-r.png" alt="Combo Revo đặc biệt">
+                    <p class="price">278.000 <s>340.000</s></p>
+                    <h3>Combo Revo đặc biệt</h3>
+                    <p>Sự kết hợp tối ưu của giá trị thật nồng độ có thể vị động phù sự trả ứng...</p>
+                    <a href="#" class="btn">MUA NGAY</a>
+                    <a href="#" class="btn-outline">CHI TIẾT</a>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
