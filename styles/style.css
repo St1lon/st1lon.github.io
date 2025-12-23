@@ -320,6 +320,31 @@ a {
     transform: scale(0.98);
 }
 
+.hero__button {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.hero__button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.hero__button:focus {
+    outline: 2px solid var(--color-white);
+    outline-offset: 4px;
+}
+
+.hero__button:active {
+    transform: translateY(0);
+}
+
 .signup {
     padding: 4rem 2rem;
     background: var(--color-light-gray);
