@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avion - Luxury Homeware</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 <body>
     <header class="header" id="home">
@@ -15,6 +16,11 @@
                     <img src="Лого.png" alt="Avion Logo">
                 </a>
                 <div class="header__icons">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                        <span class="menu-toggle__line"></span>
+                        <span class="menu-toggle__line"></span>
+                        <span class="menu-toggle__line"></span>
+                    </button>
                     <a href="#" class="header__icon" aria-label="Shopping cart">
                         <img src="assets/icons/Shopping--cart.png" alt="">
                     </a>
@@ -24,7 +30,7 @@
                 </div>
             </div>
             <hr class="header__divider">
-            <nav class="nav">
+            <nav class="nav" id="mainNav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#plant-pots" class="nav__link">Plant pots</a></li>
                     <li class="nav__item"><a href="#ceramics" class="nav__link">Ceramics</a></li>
@@ -203,6 +209,9 @@
             <p class="footer__copyright">Copyright 2022 Avion LTD</p>
         </div>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
 
